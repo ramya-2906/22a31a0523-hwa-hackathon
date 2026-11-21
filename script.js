@@ -2,7 +2,7 @@ const PRODUCT = {
   id: 'pph-1',
   name: 'PawPlay Haven Smart Puzzle Treat Station',
   price: 4999,
-  image: 'assets/images/dog-puzzle.svg'
+  image: 'dog.jpeg'
 };
 
 let cart = JSON.parse(localStorage.getItem('pph_cart')) || [];

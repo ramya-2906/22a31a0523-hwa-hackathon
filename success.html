@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Success - PawPlay Haven</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+<nav class="nav">
+<div class="logo">PawPlay Haven</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+<div class="nav-mobile" id="nav-mobile">&#9776;</div>
+</nav>
+</header>
+
+<section class="section success-section">
+<div class="container">
+<div class="success-card">
+<div class="success-icon">&#10004;</div>
+<h2>Order Placed!</h2>
+<p>Thank you for shopping with PawPlay Haven. Your Smart Puzzle Treat Station is on its way.</p>
+<div class="order-id">
+<strong>Order ID:</strong> <span id="order-id">PPH-00000</span>
+</div>
+<div class="success-actions">
+<button class="btn-back" onclick="goHome()">Back to Home</button>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>&copy; 2026 PawPlay Haven. Smart Puzzle Treat Station for dogs.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('order-id').textContent = 'PPH-' + Math.floor(100000 + Math.random() * 900000);
+</script>
+</body>
+</html>

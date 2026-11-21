@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PawPlay Haven - Smart Puzzle Treat Station</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+<nav class="nav">
+<div class="logo">PawPlay Haven</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#bored">Why Bored</a></li>
+<li><a href="#works">How It Works</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="cart.html" class="nav-cart">Cart <span id="cart-count">0</span></a></li>
+</ul>
+<div class="nav-mobile" id="nav-mobile">&#9776;</div>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>PawPlay Haven</h1>
+<p class="tagline">Smart Puzzle Treat Station for dogs</p>
+<p class="desc">Keeps your dog busy for <strong>4-5 hours</strong> when you're away.</p>
+<div class="price-box">
+<span class="price">&#8377; 4,999</span>
+<span class="rating">&#9733; 4.8 (120+ reviews)</span>
+</div>
+<div class="hero-actions">
+<button class="btn-buy" onclick="goToCheckout()">Buy Now</button>
+<button class="btn-cart" onclick="addToCart()">Add to Cart</button>
+</div>
+<div class="colours">
+<span class="label">Colour:</span>
+<div class="colour-swatches">
+<div class="swatch swatch-orange" data-colour="Orange" onclick="selectColour(this,'Orange')"></div>
+<div class="swatch swatch-teal" data-colour="Teal" onclick="selectColour(this,'Teal')"></div>
+</div>
+<span id="selected-colour" class="selected-colour">Selected: Orange</span>
+</div>
+</div>
+<div class="hero-image">
+<div class="product-card">
+<div class="product-badge">4.8&#9733;</div>
+<img src="https://images.unsplash.com/photo-1585110396000-9ff1a3c3b35d?w=500&q=80" alt="PawPlay Haven Smart Puzzle Treat Station" class="product-img">
+<div class="product-overlay"></div>
+</div>
+</div>
+</section>
+
+<section id="bored" class="section section-bored">
+<div class="container">
+<h2 class="section-title">Why Dogs Get Bored</h2>
+<p class="section-intro">When you're away, dogs spend long hours alone. Without stimulation, they get anxious, restless, and destructive.</p>
+<div class="bored-grid">
+<div class="bored-card">
+<div class="bored-icon">&#128054;</div>
+<h3>Separation Anxiety</h3>
+<p>Dogs miss their owners and stress out when left alone for hours.</p>
+</div>
+<div class="bored-card">
+<div class="bored-icon">&#128018;</div>
+<h3>No Mental Stimulation</h3>
+<p>A bored mind leads to chewing shoes, furniture, and endless barking.</p>
+</div>
+<div class="bored-card">
+<div class="bored-icon">&#128055;</div>
+<h3>Too Much Energy</h3>
+<p>Without a job to do, that energy turns into destructive behaviour.</p>
+</div>
+</div>
+<p class="bored-note">PawPlay Haven keeps them engaged, calm, and happy for 4-5 hours.</p>
+</div>
+</section>
+
+<section id="works" class="section section-works">
+<div class="container">
+<h2 class="section-title">How It Works</h2>
+<p class="section-intro">Four smart levels that adapt through the day.</p>
+<div class="levels-grid">
+<div class="level-card">
+<div class="level-badge">Morning</div>
+<div class="level-icon">&#127823;</div>
+<h3>Sniff Game</h3>
+<p>Gentle scent-based puzzles to wake up their nose and curiosity.</p>
+</div>
+<div class="level-card">
+<div class="level-badge">Afternoon</div>
+<div class="level-icon">&#128196;</div>
+<h3>Sliding Puzzle</h3>
+<p>Sliding tiles that challenge their problem-solving skills.</p>
+</div>
+<div class="level-card">
+<div class="level-badge">Evening</div>
+<div class="level-icon">&#127867;</div>
+<h3>Treat Maze</h3>
+<p>A treat-filled maze that rewards persistence with tasty snacks.</p>
+</div>
+<div class="level-card">
+<div class="level-badge">Night</div>
+<div class="level-icon">&#127774;</div>
+<h3>Calm Mode</h3>
+<p>Soft lights and quiet puzzles to help them wind down before sleep.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="features" class="section section-features">
+<div class="container">
+<h2 class="section-title">Features</h2>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">&#9200;</div>
+<h3>Auto Timer</h3>
+<p>Turns puzzles on and off on a schedule you set.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">&#128197;</div>
+<h3>Daily New Puzzle</h3>
+<p>A fresh challenge every day keeps them coming back.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">&#128247;</div>
+<h3>Camera</h3>
+<p>Check in on your dog anytime from your phone.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">&#128225;</div>
+<h3>App Notification</h3>
+<p>Get alerts when puzzles complete or treats run low.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">&#128034;</div>
+<h3>Safe Material</h3>
+<p>BPA-free, chew-resistant, pet-safe construction.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">&#128268;</div>
+<h3>Rechargeable</h3>
+<p>Long-lasting battery with USB-C charging.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reviews" class="section section-reviews">
+<div class="container">
+<h2 class="section-title">Customer Reviews</h2>
+<div class="reviews-grid">
+<div class="review-card">
+<div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p class="review-text">"Our Labrador used to destroy cushions. Now she's busy for hours. Best purchase ever!"</p>
+<p class="review-author">- Sarah M.</p>
+</div>
+<div class="review-card">
+<div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+<p class="review-text">"The camera feature is amazing. I can watch her play while I'm at work."</p>
+<p class="review-author">- Rajesh K.</p>
+</div>
+<div class="review-card">
+<div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p class="review-text">"Worth every rupee. Our beagle is calmer and happier all day."</p>
+<p class="review-author">- Priya S.</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>&copy; 2026 PawPlay Haven. Smart Puzzle Treat Station for dogs.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

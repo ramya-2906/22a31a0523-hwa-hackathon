@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart - PawPlay Haven</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+<nav class="nav">
+<div class="logo">PawPlay Haven</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="cart.html" class="nav-cart active">Cart <span id="cart-count">0</span></a></li>
+</ul>
+<div class="nav-mobile" id="nav-mobile">&#9776;</div>
+</nav>
+</header>
+
+<section class="section cart-section">
+<div class="container">
+<h2 class="section-title">Your Cart</h2>
+<div class="cart-wrapper">
+<div class="cart-items" id="cart-items">
+</div>
+<div class="cart-summary">
+<div class="summary-card">
+<h3>Order Summary</h3>
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="summary-subtotal">&#8377; 0</span>
+</div>
+<div class="summary-row">
+<span>Shipping</span>
+<span class="free">Free</span>
+</div>
+<div class="summary-row total">
+<span>Total</span>
+<span id="summary-total">&#8377; 0</span>
+</div>
+<button class="btn-checkout" onclick="goToCheckout()" id="btn-checkout">Proceed to Checkout</button>
+<p class="cart-empty-msg" id="cart-empty">Your cart is empty.</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<p>&copy; 2026 PawPlay Haven. Smart Puzzle Treat Station for dogs.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
